@@ -1,0 +1,268 @@
+
+.calculadora {
+    background-color: #ffecaf; /* Amarillo suave */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 400px; /* Ajustar la altura para que sea más cuadrada */
+    color: #003057; /* Texto azul oscuro */
+}
+
+.calculadora input {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center; /* Centrar el texto */
+    border: none;
+    background-color: #ffecaf; /* Amarillo suave */
+    color: #003057; /* Azul oscuro (aproximado) */
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.botones button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #b0e2ff; /* Celeste */
+    color: #003057; /* Azul oscuro */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botones button:hover {
+    background-color: #003057; /* Azul oscuro */
+    color: #fff;
+}
+
+.botones button:active {
+    background-color: #003057; /* Azul oscuro */
+    color: #fff;
+}
+
+.botones button:last-child {
+    background-color: #003057; /* Azul oscuro */
+    color: #fff;
+}
+
+.historial {
+    width: 200px;
+    padding: 10px;
+    background-color: #003057; /* Azul oscuro (aproximado) */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    height: 370px;
+    overflow-y: auto;
+    color: #fff; /* Texto blanco para contrastar con el fondo azul */
+}
+
+.historial h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff; /* Texto blanco para contrastar con el fondo azul */
+}
+
+.historial ul {
+    list-style: none;
+    padding: 0;
+}
+
+.historial li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.historial li:last-child {
+    border-bottom: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Blanco */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0; /* Eliminar el margen predeterminado del body */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.calculadora-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* Centrar la calculadora y el historial */
+    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho */
+    max-width: 900px; /* Ancho máximo para evitar que se estire demasiado */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    padding: 20px;
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.calculadora {
+    background-color: #ffecaf;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 400px;
+    color: #003057;
+}
+
+.calculadora input {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    background-color: #ffecaf;
+    color: #003057;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.botones button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #b0e2ff;
+    color: #003057;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botones button:hover {
+    background-color: #003057;
+    color: #fff;
+}
+
+.botones button:active {
+    background-color: #003057;
+    color: #fff;
+}
+
+.botones button:last-child {
+    background-color: #003057;
+    color: #fff;
+}
+
+.historial {
+    width: 200px;
+    padding: 10px;
+    background-color: #003057;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    height: 370px;
+    overflow-y: auto;
+    color: #fff;
+}
+
+.historial h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.historial ul {
+    list-style: none;
+    padding: 0;
+}
+
+.historial li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.historial li:last-child {
+    border-bottom: none;
+}
+
+.texto-animado {
+    font-size: 2em;
+    color: #003057;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid #003057;
+    width: 100%;
+    animation: 
+        typing 2s steps(40, end) forwards,
+        blink-caret .75s step-end infinite;
+    margin: 0 auto;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #003057; }
+}
+
+@media (max-width: 600px) {
+    .calculadora {
+        width: 90%;
+    }
+
+    .historial {
+        width: 90%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}

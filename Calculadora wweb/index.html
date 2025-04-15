@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora web moderna con colores de la UCT">
+    <meta name="keywords" content="calculadora, web, moderna, UCT">
+    <meta name="author" content="Cline">
+    <title>Calculadora Moderna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://doctoradoeduconsorcio.cl/wp-content/uploads/UCT_logo-1024x342.png" alt="Logo UCT" width="300">
+        </div>
+        <h1>
+            <span class="texto-animado">Calculadora Web</span>
+        </h1>
+    </header>
+    <main>
+        <div class="calculadora-container">
+            <div class="calculadora">
+                <input type="text" id="display" readonly placeholder="0">
+                <div class="botones">
+                    <button onclick="limpiarDisplay()">C</button>
+                    <button onclick="borrarUltimo()">←</button>
+                    <button onclick="agregarAlDisplay('/')">/</button>
+                    <button onclick="agregarAlDisplay('*')">*</button>
+                    <button onclick="agregarAlDisplay('7')">7</button>
+                    <button onclick="agregarAlDisplay('8')">8</button>
+                    <button onclick="agregarAlDisplay('9')">9</button>
+                    <button onclick="agregarAlDisplay('-')">-</button>
+                    <button onclick="agregarAlDisplay('4')">4</button>
+                    <button onclick="agregarAlDisplay('5')">5</button>
+                    <button onclick="agregarAlDisplay('6')">6</button>
+                    <button onclick="agregarAlDisplay('+')">+</button>
+                    <button onclick="agregarAlDisplay('1')">1</button>
+                    <button onclick="agregarAlDisplay('2')">2</button>
+                    <button onclick="agregarAlDisplay('3')">3</button>
+                    <button onclick="calcularResultado()">=</button>
+                    <button onclick="agregarAlDisplay('0')">0</button>
+                    <button onclick="agregarAlDisplay('.')">.</button>
+                </div>
+            </div>
+            <div class="historial">
+                <h2>Historial</h2>
+                <ul id="historial-lista"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
